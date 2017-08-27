@@ -1,0 +1,1 @@
+yep, definitely keep a private key in plain text ;P
