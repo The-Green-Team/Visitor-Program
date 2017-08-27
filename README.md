@@ -5,15 +5,9 @@ This program lets visitors sign in to your office or school and prints out a nam
 Work in Progress:
 
 * UI
-
 * Server Side Database
-
 * Login and Sign Up Pages
-
-  ​
 
 As of right now nothing works, any help is appreciated though
 
-
-
-##Windows version will be made first then the Linux version will be built off of it.
+### Windows version will be made first then the Linux version will be built off of it.
