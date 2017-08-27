@@ -8,14 +8,27 @@ DIM SHARED Welcome_Window AS LONG
 DIM SHARED LoginForm AS LONG
 DIM SHARED WelcomeToGREENCharterSchoolLB AS LONG
 DIM SHARED PleaseSignInBelowLB AS LONG
-DIM SHARED Cqb64VisitorProgramlogojpegPX AS LONG
+DIM SHARED Cqb64VisitorProgramVisitorPrograPX AS LONG
 DIM SHARED FirstNameTB AS LONG
 DIM SHARED LastNameTB AS LONG
 DIM SHARED MiddleTB AS LONG
 DIM SHARED CityNameTB AS LONG
 DIM SHARED ZipCodeTB AS LONG
 DIM SHARED ReasonWhyYouAreHereTB AS LONG
-
+DIM SHARED ExamplesPickingUpSonOrDaughterLB AS LONG
+DIM SHARED PictureBox2 AS LONG
+DIM SHARED TakePictureLB AS LONG
+DIM SHARED VerificationCodeTB AS LONG
+DIM SHARED CodeLB AS LONG
+DIM SHARED TeachersNameTB AS LONG
+DIM SHARED CompleteAddressTB AS LONG
+DIM SHARED Example123SesameStSimpsonvilleLB AS LONG
+DIM SHARED ExtraInformationOptionalTB AS LONG
+DIM SHARED LB AS LONG
+DIM SHARED LB2 AS LONG
+DIM SHARED OptionalLB AS LONG
+DIM SHARED SubmitFormLB AS LONG
+DIM SHARED IAknowledgeAndAcceptTheseTermsCB AS LONG
 
 ': External modules: ---------------------------------------------------------------
 '$INCLUDE:'InForm\InForm.ui'
@@ -49,7 +62,7 @@ SELECT CASE id
 
     CASE PleaseSignInBelowLB
 
-    CASE Cqb64VisitorProgramlogojpegPX
+    CASE Cqb64VisitorProgramVisitorPrograPX
 
     CASE FirstNameTB
 
@@ -62,6 +75,34 @@ SELECT CASE id
     CASE ZipCodeTB
 
     CASE ReasonWhyYouAreHereTB
+
+    CASE ExamplesPickingUpSonOrDaughterLB
+
+    CASE PictureBox2
+
+    CASE TakePictureLB
+
+    CASE VerificationCodeTB
+
+    CASE CodeLB
+
+    CASE TeachersNameTB
+
+    CASE CompleteAddressTB
+
+    CASE Example123SesameStSimpsonvilleLB
+
+    CASE ExtraInformationOptionalTB
+
+    CASE LB
+
+    CASE LB2
+
+    CASE OptionalLB
+
+    CASE SubmitFormLB
+
+    CASE IAknowledgeAndAcceptTheseTermsCB
 
 END SELECT
 END SUB
@@ -76,7 +117,7 @@ SELECT CASE id
 
     CASE PleaseSignInBelowLB
 
-    CASE Cqb64VisitorProgramlogojpegPX
+    CASE Cqb64VisitorProgramVisitorPrograPX
 
     CASE FirstNameTB
 
@@ -89,6 +130,34 @@ SELECT CASE id
     CASE ZipCodeTB
 
     CASE ReasonWhyYouAreHereTB
+
+    CASE ExamplesPickingUpSonOrDaughterLB
+
+    CASE PictureBox2
+
+    CASE TakePictureLB
+
+    CASE VerificationCodeTB
+
+    CASE CodeLB
+
+    CASE TeachersNameTB
+
+    CASE CompleteAddressTB
+
+    CASE Example123SesameStSimpsonvilleLB
+
+    CASE ExtraInformationOptionalTB
+
+    CASE LB
+
+    CASE LB2
+
+    CASE OptionalLB
+
+    CASE SubmitFormLB
+
+    CASE IAknowledgeAndAcceptTheseTermsCB
 
 END SELECT
 END SUB
@@ -103,7 +172,7 @@ SELECT CASE id
 
     CASE PleaseSignInBelowLB
 
-    CASE Cqb64VisitorProgramlogojpegPX
+    CASE Cqb64VisitorProgramVisitorPrograPX
 
     CASE FirstNameTB
 
@@ -116,6 +185,34 @@ SELECT CASE id
     CASE ZipCodeTB
 
     CASE ReasonWhyYouAreHereTB
+
+    CASE ExamplesPickingUpSonOrDaughterLB
+
+    CASE PictureBox2
+
+    CASE TakePictureLB
+
+    CASE VerificationCodeTB
+
+    CASE CodeLB
+
+    CASE TeachersNameTB
+
+    CASE CompleteAddressTB
+
+    CASE Example123SesameStSimpsonvilleLB
+
+    CASE ExtraInformationOptionalTB
+
+    CASE LB
+
+    CASE LB2
+
+    CASE OptionalLB
+
+    CASE SubmitFormLB
+
+    CASE IAknowledgeAndAcceptTheseTermsCB
 
 END SELECT
 END SUB
@@ -132,6 +229,18 @@ SELECT CASE id
 
     CASE ZipCodeTB
 
+    CASE ReasonWhyYouAreHereTB
+
+    CASE VerificationCodeTB
+
+    CASE TeachersNameTB
+
+    CASE CompleteAddressTB
+
+    CASE ExtraInformationOptionalTB
+
+    CASE IAknowledgeAndAcceptTheseTermsCB
+
 END SELECT
 END SUB
 
@@ -147,6 +256,18 @@ SELECT CASE id
 
     CASE ZipCodeTB
 
+    CASE ReasonWhyYouAreHereTB
+
+    CASE VerificationCodeTB
+
+    CASE TeachersNameTB
+
+    CASE CompleteAddressTB
+
+    CASE ExtraInformationOptionalTB
+
+    CASE IAknowledgeAndAcceptTheseTermsCB
+
 END SELECT
 END SUB
 
@@ -160,7 +281,7 @@ SELECT CASE id
 
     CASE PleaseSignInBelowLB
 
-    CASE Cqb64VisitorProgramlogojpegPX
+    CASE Cqb64VisitorProgramVisitorPrograPX
 
     CASE FirstNameTB
 
@@ -173,6 +294,34 @@ SELECT CASE id
     CASE ZipCodeTB
 
     CASE ReasonWhyYouAreHereTB
+
+    CASE ExamplesPickingUpSonOrDaughterLB
+
+    CASE PictureBox2
+
+    CASE TakePictureLB
+
+    CASE VerificationCodeTB
+
+    CASE CodeLB
+
+    CASE TeachersNameTB
+
+    CASE CompleteAddressTB
+
+    CASE Example123SesameStSimpsonvilleLB
+
+    CASE ExtraInformationOptionalTB
+
+    CASE LB
+
+    CASE LB2
+
+    CASE OptionalLB
+
+    CASE SubmitFormLB
+
+    CASE IAknowledgeAndAcceptTheseTermsCB
 
 END SELECT
 END SUB
@@ -187,7 +336,7 @@ SELECT CASE id
 
     CASE PleaseSignInBelowLB
 
-    CASE Cqb64VisitorProgramlogojpegPX
+    CASE Cqb64VisitorProgramVisitorPrograPX
 
     CASE FirstNameTB
 
@@ -200,6 +349,34 @@ SELECT CASE id
     CASE ZipCodeTB
 
     CASE ReasonWhyYouAreHereTB
+
+    CASE ExamplesPickingUpSonOrDaughterLB
+
+    CASE PictureBox2
+
+    CASE TakePictureLB
+
+    CASE VerificationCodeTB
+
+    CASE CodeLB
+
+    CASE TeachersNameTB
+
+    CASE CompleteAddressTB
+
+    CASE Example123SesameStSimpsonvilleLB
+
+    CASE ExtraInformationOptionalTB
+
+    CASE LB
+
+    CASE LB2
+
+    CASE OptionalLB
+
+    CASE SubmitFormLB
+
+    CASE IAknowledgeAndAcceptTheseTermsCB
 
 END SELECT
 END SUB
@@ -215,6 +392,18 @@ SELECT CASE id
     CASE CityNameTB
 
     CASE ZipCodeTB
+
+    CASE ReasonWhyYouAreHereTB
+
+    CASE VerificationCodeTB
+
+    CASE TeachersNameTB
+
+    CASE CompleteAddressTB
+
+    CASE ExtraInformationOptionalTB
+
+    CASE IAknowledgeAndAcceptTheseTermsCB
 
 END SELECT
 END SUB
@@ -233,6 +422,14 @@ SELECT CASE id
 
     CASE ReasonWhyYouAreHereTB
 
+    CASE VerificationCodeTB
+
+    CASE TeachersNameTB
+
+    CASE CompleteAddressTB
+
+    CASE ExtraInformationOptionalTB
+
 END SELECT
 END SUB
 
@@ -240,6 +437,4 @@ SUB __UI_ValueChanged (id AS LONG)
 SELECT CASE id
 END SELECT
 END SUB
-
-
 

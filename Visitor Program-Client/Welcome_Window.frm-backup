@@ -4,64 +4,160 @@
 '-----------------------------------------------------------
 SUB __UI_LoadForm
 
+    $EXEICON:'C:\qb64\Visitor Program\icon.ico'
+    _ICON
     DIM __UI_NewID AS LONG
 
     __UI_NewID = __UI_NewControl(__UI_Type_Form, "Welcome_Window", 1250, 900, 0, 0, 0)
     SetCaption __UI_NewID, "Welcome"
-    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 12, "")
+    Text(__UI_NewID) = "C:\qb64\Visitor Program\icon.ico"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
     Control(__UI_NewID).BackColor = _RGB32(255, 255, 255)
     Control(__UI_NewID).CenteredWindow = True
 
-    __UI_NewID = __UI_NewControl(__UI_Type_Frame, "LoginForm", 852, 682, 386, 156, 0)
+    __UI_NewID = __UI_NewControl(__UI_Type_Frame, "LoginForm", 954, 682, 285, 209, 0)
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 12, "")
     Control(__UI_NewID).HasBorder = True
-    Control(__UI_NewID).Value = 6
+    Control(__UI_NewID).Value = 19
 
-    __UI_NewID = __UI_NewControl(__UI_Type_Label, "WelcomeToGREENCharterSchoolLB", 859, 94, 386, 19, 0)
+    __UI_NewID = __UI_NewControl(__UI_Type_Label, "WelcomeToGREENCharterSchoolLB", 859, 94, 273, 26, 0)
     SetCaption __UI_NewID, "Welcome to GREEN Charter School"
     Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 48, "")
     Control(__UI_NewID).BackStyle = __UI_Transparent
     Control(__UI_NewID).Align = __UI_Center
     Control(__UI_NewID).VAlign = __UI_Middle
 
-    __UI_NewID = __UI_NewControl(__UI_Type_Label, "PleaseSignInBelowLB", 553, 94, 539, 66, 0)
+    __UI_NewID = __UI_NewControl(__UI_Type_Label, "PleaseSignInBelowLB", 553, 94, 426, 73, 0)
     SetCaption __UI_NewID, "Please Sign in Below:"
     Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 32, "")
     Control(__UI_NewID).BackStyle = __UI_Transparent
     Control(__UI_NewID).Align = __UI_Center
     Control(__UI_NewID).VAlign = __UI_Middle
 
-    __UI_NewID = __UI_NewControl(__UI_Type_PictureBox, "cvisitorresourceslogojpegPX", 264, 264, 1, 0, 0)
-    LoadImage Control(__UI_NewID), "c:\visitor\resources\logo.jpeg"
+    __UI_NewID = __UI_NewControl(__UI_Type_PictureBox, "Cqb64VisitorProgramVisitorPrograPX", 264, 264, 0, 0, 0)
+    LoadImage Control(__UI_NewID), "C:\qb64\Visitor-Program\Visitor Program-Client\logo.jpeg"
     Control(__UI_NewID).Stretch = True
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 12, "")
 
-    __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "FirstNameTB", 783, 63, 17, 12, __UI_GetID("LoginForm"))
+    __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "FirstNameTB", 900, 63, 17, 12, __UI_GetID("LoginForm"))
     SetCaption __UI_NewID, "First Name"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
     Control(__UI_NewID).HasBorder = True
     Control(__UI_NewID).CanHaveFocus = True
 
-    __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "LastNameTB", 783, 63, 17, 85, __UI_GetID("LoginForm"))
+    __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "LastNameTB", 900, 63, 17, 85, __UI_GetID("LoginForm"))
     SetCaption __UI_NewID, "Last Name"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
     Control(__UI_NewID).HasBorder = True
     Control(__UI_NewID).CanHaveFocus = True
 
     __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "MiddleTB", 69, 63, 17, 163, __UI_GetID("LoginForm"))
     SetCaption __UI_NewID, "Middle"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
     Control(__UI_NewID).HasBorder = True
     Control(__UI_NewID).CanHaveFocus = True
 
     __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "CityNameTB", 419, 63, 108, 163, __UI_GetID("LoginForm"))
     SetCaption __UI_NewID, "City Name"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
     Control(__UI_NewID).HasBorder = True
     Control(__UI_NewID).CanHaveFocus = True
 
     __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "ZipCodeTB", 156, 63, 549, 163, __UI_GetID("LoginForm"))
     SetCaption __UI_NewID, "Zip Code"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
     Control(__UI_NewID).HasBorder = True
     Control(__UI_NewID).CanHaveFocus = True
 
-    __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "ReasonWhyYouAreHereTB", 817, 335, 17, 250, __UI_GetID("LoginForm"))
+    __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "ReasonWhyYouAreHereTB", 899, 50, 17, 245, __UI_GetID("LoginForm"))
     SetCaption __UI_NewID, "Reason why you are here"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
     Control(__UI_NewID).HasBorder = True
+    Control(__UI_NewID).CanHaveFocus = True
+
+    __UI_NewID = __UI_NewControl(__UI_Type_Label, "ExamplesPickingUpSonOrDaughterLB", 540, 23, 17, 299, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "Examples: Picking up son or daughter; touring the school; Checking lost and found"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 14, "")
+    Control(__UI_NewID).VAlign = __UI_Middle
+
+    __UI_NewID = __UI_NewControl(__UI_Type_PictureBox, "PictureBox2", 300, 300, 17, 332, __UI_GetID("LoginForm"))
+    Control(__UI_NewID).Stretch = True
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
+    Control(__UI_NewID).HasBorder = True
+
+    __UI_NewID = __UI_NewControl(__UI_Type_Label, "TakePictureLB", 164, 30, 85, 640, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "Take Picture"
+    Control(__UI_NewID).Font = SetFont("segoeui.ttf", 14, "")
+    Control(__UI_NewID).ForeColor = _RGB32(255, 255, 255)
+    Control(__UI_NewID).BackColor = _RGB32(0, 0, 0)
+    Control(__UI_NewID).Align = __UI_Center
+    Control(__UI_NewID).VAlign = __UI_Middle
+
+    __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "VerificationCodeTB", 192, 63, 725, 163, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "Verification Code"
+    ToolTip(__UI_NewID) = "please type the verification code that is at the bottom below this textbox"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
+    Control(__UI_NewID).HasBorder = True
+    Control(__UI_NewID).CanHaveFocus = True
+
+    __UI_NewID = __UI_NewControl(__UI_Type_Label, "CodeLB", 150, 23, 746, 226, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "Code: "
+    Control(__UI_NewID).BackStyle = __UI_Transparent
+    Control(__UI_NewID).VAlign = __UI_Middle
+
+    __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "TeachersNameTB", 566, 63, 351, 332, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "Teachers Name"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
+    Control(__UI_NewID).HasBorder = True
+    Control(__UI_NewID).CanHaveFocus = True
+
+    __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "CompleteAddressTB", 566, 63, 351, 408, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "Complete Address"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
+    Control(__UI_NewID).HasBorder = True
+    Control(__UI_NewID).CanHaveFocus = True
+
+    __UI_NewID = __UI_NewControl(__UI_Type_Label, "Example123SesameStSimpsonvilleLB", 540, 23, 357, 477, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "Example: 123 Sesame St. Simpsonville, South Carolina"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 14, "")
+    Control(__UI_NewID).VAlign = __UI_Middle
+
+    __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "ExtraInformationOptionalTB", 566, 63, 357, 512, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "Extra Information (Optional)"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
+    Control(__UI_NewID).HasBorder = True
+    Control(__UI_NewID).CanHaveFocus = True
+
+    __UI_NewID = __UI_NewControl(__UI_Type_Label, "LB", 150, 23, 85, 149, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "*"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 24, "")
+    Control(__UI_NewID).BackStyle = __UI_Transparent
+    Control(__UI_NewID).VAlign = __UI_Middle
+
+    __UI_NewID = __UI_NewControl(__UI_Type_Label, "LB2", 150, 23, 919, 497, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "*"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 24, "")
+    Control(__UI_NewID).BackStyle = __UI_Transparent
+    Control(__UI_NewID).VAlign = __UI_Middle
+
+    __UI_NewID = __UI_NewControl(__UI_Type_Label, "OptionalLB", 138, 23, 1101, 183, 0)
+    SetCaption __UI_NewID, "* = Optional "
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 24, "")
+    Control(__UI_NewID).BackStyle = __UI_Transparent
+    Control(__UI_NewID).VAlign = __UI_Middle
+
+    __UI_NewID = __UI_NewControl(__UI_Type_Label, "SubmitFormLB", 214, 50, 703, 614, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "Submit Form"
+    Control(__UI_NewID).Font = SetFont("segoeui.ttf", 24, "")
+    Control(__UI_NewID).ForeColor = _RGB32(255, 255, 255)
+    Control(__UI_NewID).BackColor = _RGB32(0, 0, 0)
+    Control(__UI_NewID).Align = __UI_Center
+    Control(__UI_NewID).VAlign = __UI_Middle
+
+    __UI_NewID = __UI_NewControl(__UI_Type_CheckBox, "IAknowledgeAndAcceptTheseTermsCB", 331, 23, 592, 582, __UI_GetID("LoginForm"))
+    SetCaption __UI_NewID, "I aknowledge and accept these terms"
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 20, "")
+    Control(__UI_NewID).VAlign = __UI_Middle
     Control(__UI_NewID).CanHaveFocus = True
 
 END SUB
@@ -71,11 +167,25 @@ SUB __UI_AssignIDs
     LoginForm = __UI_GetID("LoginForm")
     WelcomeToGREENCharterSchoolLB = __UI_GetID("WelcomeToGREENCharterSchoolLB")
     PleaseSignInBelowLB = __UI_GetID("PleaseSignInBelowLB")
-    cvisitorresourceslogojpegPX = __UI_GetID("cvisitorresourceslogojpegPX")
+    Cqb64VisitorProgramVisitorPrograPX = __UI_GetID("Cqb64VisitorProgramVisitorPrograPX")
     FirstNameTB = __UI_GetID("FirstNameTB")
     LastNameTB = __UI_GetID("LastNameTB")
     MiddleTB = __UI_GetID("MiddleTB")
     CityNameTB = __UI_GetID("CityNameTB")
     ZipCodeTB = __UI_GetID("ZipCodeTB")
     ReasonWhyYouAreHereTB = __UI_GetID("ReasonWhyYouAreHereTB")
+    ExamplesPickingUpSonOrDaughterLB = __UI_GetID("ExamplesPickingUpSonOrDaughterLB")
+    PictureBox2 = __UI_GetID("PictureBox2")
+    TakePictureLB = __UI_GetID("TakePictureLB")
+    VerificationCodeTB = __UI_GetID("VerificationCodeTB")
+    CodeLB = __UI_GetID("CodeLB")
+    TeachersNameTB = __UI_GetID("TeachersNameTB")
+    CompleteAddressTB = __UI_GetID("CompleteAddressTB")
+    Example123SesameStSimpsonvilleLB = __UI_GetID("Example123SesameStSimpsonvilleLB")
+    ExtraInformationOptionalTB = __UI_GetID("ExtraInformationOptionalTB")
+    LB = __UI_GetID("LB")
+    LB2 = __UI_GetID("LB2")
+    OptionalLB = __UI_GetID("OptionalLB")
+    SubmitFormLB = __UI_GetID("SubmitFormLB")
+    IAknowledgeAndAcceptTheseTermsCB = __UI_GetID("IAknowledgeAndAcceptTheseTermsCB")
 END SUB
