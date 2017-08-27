@@ -4,7 +4,7 @@
 '-----------------------------------------------------------
 SUB __UI_LoadForm
 
-    $EXEICON:'C:\qb64\Visitor-Program\Visitor Program-Client\icon.ico'
+$EXEICON:'C:\Visitor-Program\Visitor Program-Client\icon.ico'
 _ICON
 DIM __UI_NewID AS LONG
 
@@ -35,7 +35,7 @@ DIM __UI_NewID AS LONG
     Control(__UI_NewID).VAlign = __UI_Middle
 
     __UI_NewID = __UI_NewControl(__UI_Type_PictureBox, "Cqb64VisitorProgramVisitorPrograPX", 264, 264, 0, 0, 0)
-    LoadImage Control(__UI_NewID), "C:\qb64\Visitor-Program\Visitor Program-Client\logo.jpeg"
+    LoadImage Control(__UI_NewID), "C:\Visitor-Program\Visitor Program-Client\logo.jpeg"
     Control(__UI_NewID).Stretch = True
     Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 12, "")
 
