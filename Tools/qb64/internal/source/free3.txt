@@ -1,0 +1,4 @@
+if(oldstr2007){
+if(oldstr2007->fixed)qbs_set(oldstr2007,_FUNC_FILEHASEXTENSION_STRING_F);
+qbs_free(_FUNC_FILEHASEXTENSION_STRING_F);
+}
