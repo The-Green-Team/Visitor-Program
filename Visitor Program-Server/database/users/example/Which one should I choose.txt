@@ -1,0 +1,2 @@
+I think I'm going to use the vCard format just because of it's simplicity
+and portability but you can help choose by making an issue

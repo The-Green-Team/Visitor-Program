@@ -1,0 +1,16 @@
+BEGIN:VCARD
+N:User;Example;Person;Example User 4;EPU
+ADR;INTL;PARCEL;WORK:;;hghg;ghfghgfhfg;hhfg;ffg;hgh
+ADR;DOM;PARCEL;HOME:;;gfhgfh;gfhfghgf;hfghgf;fghgfh;fghfghgfg
+EMAIL;INTERNET:ghfghfg
+EMAIL;INTERNET:fghgfhgf
+EMAIL;INTERNET:hgfghfg
+ORG:hfghfgh
+TEL;WORK:ghfghgf
+TEL;FAX;WORK:gfhgfh
+TEL;CELL:fghfghg
+TEL;HOME:gfhfgh
+TITLE:fghfghg
+URL;WORK:gfhhfgh
+URL:gfgfhgfh
+END:VCARD
