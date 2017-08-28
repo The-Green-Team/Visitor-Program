@@ -4,19 +4,20 @@
 '-----------------------------------------------------------
 SUB __UI_LoadForm
 
-$EXEICON:'C:\Visitor-Program\Visitor Program-Client\icon.ico'
+    $EXEICON:'C:\qb64\Visitor-Program\Visitor Program-Client\icon.ico'
 _ICON
 DIM __UI_NewID AS LONG
 
     __UI_NewID = __UI_NewControl(__UI_Type_Form, "Welcome_Window", 1250, 900, 0, 0, 0)
     SetCaption __UI_NewID, "Welcome"
     Text(__UI_NewID) = "C:\qb64\Visitor Program\icon.ico"
-    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 18, "")
+    Control(__UI_NewID).Font = SetFont("segoeui.ttf", 18, "")
     Control(__UI_NewID).BackColor = _RGB32(255, 255, 255)
     Control(__UI_NewID).CenteredWindow = True
 
-    __UI_NewID = __UI_NewControl(__UI_Type_Frame, "LoginForm", 954, 682, 285, 209, 0)
+    __UI_NewID = __UI_NewControl(__UI_Type_Frame, "LoginForm", 954, 685, 285, 205, 0)
     Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 12, "")
+    Control(__UI_NewID).BackStyle = __UI_Transparent
     Control(__UI_NewID).HasBorder = True
     Control(__UI_NewID).Value = 19
 
@@ -35,7 +36,7 @@ DIM __UI_NewID AS LONG
     Control(__UI_NewID).VAlign = __UI_Middle
 
     __UI_NewID = __UI_NewControl(__UI_Type_PictureBox, "Cqb64VisitorProgramVisitorPrograPX", 264, 264, 0, 0, 0)
-    LoadImage Control(__UI_NewID), "C:\Visitor-Program\Visitor Program-Client\logo.jpeg"
+    LoadImage Control(__UI_NewID), "C:\qb64\Visitor-Program\Visitor Program-Client\logo.jpeg"
     Control(__UI_NewID).Stretch = True
     Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 12, "")
 
@@ -140,11 +141,12 @@ DIM __UI_NewID AS LONG
     Control(__UI_NewID).BackStyle = __UI_Transparent
     Control(__UI_NewID).VAlign = __UI_Middle
 
-    __UI_NewID = __UI_NewControl(__UI_Type_Label, "OptionalLB", 138, 23, 1101, 183, 0)
+    __UI_NewID = __UI_NewControl(__UI_Type_Label, "OptionalLB", 153, 26, 1086, 176, 0)
     SetCaption __UI_NewID, "* = Optional "
-    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 24, "")
+    Control(__UI_NewID).Font = SetFont("segoeuil.ttf", 26, "")
     Control(__UI_NewID).BackStyle = __UI_Transparent
     Control(__UI_NewID).VAlign = __UI_Middle
+    Control(__UI_NewID).Disabled = True
 
     __UI_NewID = __UI_NewControl(__UI_Type_Label, "SubmitFormLB", 214, 50, 703, 614, __UI_GetID("LoginForm"))
     SetCaption __UI_NewID, "Submit Form"
